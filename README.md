@@ -1,10 +1,10 @@
 # mytodolist.github.io
-My First Project which is an To-Do List Web App
-Made with:
--HTML
--CSS
--Vanilla JavaScript
+My First Project which is an To-Do List Web App <br>
+<strong>Made with:<strong> <br>
+-HTML <br>
+-CSS <br>
+-Vanilla JavaScript <br>
 
-Learned Skills:
--Event Listeners on JS
--Add & Removing DOM
+<strong>Learned Skills:<strong> <br>
+-Event Listeners on JS <br>
+-DOM Traversing <br>
