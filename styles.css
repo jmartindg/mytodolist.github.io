@@ -6,7 +6,7 @@
 body{
     background-image: linear-gradient(120deg, #141e30, #243b55);
     color: #ffffff;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     min-height: 100vh;
 }
 header{
@@ -29,7 +29,8 @@ header p{
 }
 form input, form button{
     padding: 0.5rem;
-    font-size: 1.4em;
+    width: 50px;
+    font-size: 1.5em;
     border: none;
     outline: none;
     background: #ffffff;
@@ -63,6 +64,10 @@ form button:hover{
     font-size: 1.4em;
     transition: all 0.5s ease;
 }
+.todo-input {
+    width: 400px;
+    padding-left: 10px;
+}
 .todo li{
     flex: 1;
 }
@@ -88,6 +93,13 @@ form button:hover{
     opacity: 0.5;
 }
 
+.date {
+    font-size: 2rem;
+    font-weight: 700;
+    padding-bottom: 10px;
+    letter-spacing: 1px;
+}
+
 @media (max-width: 846px){
     .todo-list{
         min-width: 60%;
@@ -102,14 +114,61 @@ form button:hover{
     .todo-list{
         min-width: 70%;
     }
+    .todo-input {
+        width: 350px;
+    }
+}
+@media (max-width: 560px){
+    .todo-list{
+        min-width: 70%;
+    }
+    .todo-input {
+        width: 300px;
+    }
+    .date {
+        font-size: 1.7rem;
+    }
+    header p {
+        font-size: 1.2rem;
+    }
 }
 @media (max-width: 479px){
     .todo-list{
-        min-width: 80%;
+        min-width: 65%;
+    }
+    .todo-input {
+        width: 250px;
+    }
+    .date {
+        font-size: 1.5rem;
     }
 }
 @media (max-width: 420px){
     .todo-list{
-        min-width: 85%;
+        min-width: 75%;
+    }
+    .date {
+        font-size: 1.3rem;
+    }
+    form {
+        margin-top: -40px;
+    }
+}
+
+@media (max-width: 320px){
+    .todo-list{
+        min-width: 73%;
+    }
+    .date {
+        font-size: 1.1rem;
+    }
+    form {
+        margin-top: -10px;
+    }
+    header p {
+        font-size: 1rem;
+    }
+    form input {
+        width: 15px;
     }
 }

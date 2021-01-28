@@ -2,6 +2,7 @@
 const todoInput = document.querySelector('.todo-input');
 const todoButton = document.querySelector('.todo-button');
 const todoList = document.querySelector('.todo-list');
+document.querySelector('.date').innerHTML = formatAMPM();
 
 //Event Listeners
 todoButton.addEventListener('click', addTodo);
@@ -50,4 +51,16 @@ function deleteCheck(e){
         const todo = item.parentElement;
         todo.classList.toggle("completed")
     }
+}
+
+// Add Date
+
+function formatAMPM() {
+    var date = new Date(),
+        minutes = date.getMinutes().toString().length == 1 ? '0'+date.getMinutes() : date.getMinutes(),
+        hours = date.getHours().toString().length == 1 ? '0'+date.getHours() : date.getHours(),
+        ampm = date.getHours() >= 12 ? 'pm' : 'am',
+        months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],
+        days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+    return days[date.getDay()]+ ',' + ' '+months[date.getMonth()]+' '+date.getDate()+' '+date.getFullYear()+ ',' + ' '+hours+':'+minutes+ampm;
 }
