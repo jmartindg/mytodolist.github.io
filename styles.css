@@ -51,7 +51,7 @@ form button:hover{
     align-items: center;
 }
 .todo-list{
-    min-width: 40%;
+    min-width: 50%;
     list-style: none;
 }
 .todo{
@@ -100,75 +100,119 @@ form button:hover{
     letter-spacing: 1px;
 }
 
-@media (max-width: 846px){
-    .todo-list{
-        min-width: 60%;
-    }
-}
-@media (max-width: 831px){
-    .todo-list{
-        min-width: 50%;
-    }
-}
-@media (max-width: 710px){
-    .todo-list{
-        min-width: 70%;
+@media (max-width: 768px) {
+    .date {
+        font-size: 1.8rem;
     }
     .todo-input {
         width: 350px;
     }
+    .todo-list {
+        width: 400px;
+    }
 }
-@media (max-width: 560px){
-    .todo-list{
-        min-width: 70%;
-    }
-    .todo-input {
-        width: 300px;
-    }
+
+@media (max-width: 612px) {
     .date {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
     }
     header p {
         font-size: 1.2rem;
     }
+    .todo-input {
+        width: 300px;
+    }
+    .todo-list {
+        width: 370px;
+    }
 }
-@media (max-width: 479px){
-    .todo-list{
-        min-width: 65%;
+
+@media (max-width: 612px) {
+    .date {
+        font-size: 1.5rem;
+    }
+    header p {
+        font-size: 1.2rem;
+    }
+    .todo-input {
+        width: 300px;
+    }
+    .todo-list {
+        width: 370px;
+    }
+}
+
+@media (max-width: 582px) {
+    .date {
+        font-size: 1.9rem;
+    }
+    header p {
+        font-size: 1.4rem;
+    }
+    .todo-input {
+        width: 300px;
+    }
+    .todo-list {
+        width: 370px;
+    }
+}
+
+@media (max-width: 480px) {
+    .date {
+        font-size: 1.6rem;
+    }
+    header p {
+        font-size: 1.3rem;
+    }
+    .todo-input {
+        width: 300px;
+    }
+    .todo-list {
+        width: 370px;
+    }
+}
+
+@media (max-width: 378px) {
+    .date {
+        font-size: 1.4rem;
+    }
+    header p {
+        font-size: 1.2rem;
     }
     .todo-input {
         width: 250px;
     }
-    .date {
-        font-size: 1.5rem;
-    }
-}
-@media (max-width: 420px){
-    .todo-list{
-        min-width: 75%;
-    }
-    .date {
-        font-size: 1.3rem;
-    }
-    form {
-        margin-top: -40px;
+    .todo-list {
+        width: 315px;
     }
 }
 
-@media (max-width: 320px){
-    .todo-list{
-        min-width: 73%;
-    }
+@media (max-width: 320px) {
     .date {
-        font-size: 1.1rem;
-    }
-    form {
-        margin-top: -10px;
+        font-size: 1.2rem;
     }
     header p {
         font-size: 1rem;
     }
-    form input {
-        width: 15px;
+    .todo-input {
+        width: 210px;
+    }
+    .todo-list {
+        width: 280px;
+    }
+}
+
+@media (max-width: 280px) {
+    .date {
+        font-size: 1rem;
+    }
+    header p {
+        font-size: 0.9rem;
+    }
+    .todo-input {
+        width: 180px;
+    }
+    .todo-list {
+        width: 260px;
     }
 }
