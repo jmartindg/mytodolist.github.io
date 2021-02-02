@@ -1,5 +1,6 @@
-# mytodolist.github.io
+# ToDo List
 My First Project which is an To-Do List Web App <br>
+
 <strong>Made with:<strong> <br>
 -HTML <br>
 -CSS <br>
